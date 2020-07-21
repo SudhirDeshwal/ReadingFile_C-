@@ -10,7 +10,7 @@ namespace ReadingFile_Csharp
     public static class FriendsDb
     {
         private const string Dir = @"C:\Files\";
-        private const string Path = Dir + "CustomersX23.txt";
+        private const string Path = Dir + "Friends.txt";
 
 
         public static List<Friends> GetFriends()
@@ -25,7 +25,6 @@ namespace ReadingFile_Csharp
                 string row = textIn.ReadLine();
                 string[] columns = row.Split('|');
                 Friends friend = new Friends();
-                friend.FriendID = Convert.ToInt32(columns[0]);
                 friend.Name = columns[1];
                 friends.Add(friend);
             }

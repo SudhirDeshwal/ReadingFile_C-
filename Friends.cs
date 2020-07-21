@@ -8,7 +8,6 @@ namespace ReadingFile_Csharp
 {
     public class Friends
     {
-        public int FriendID { get; set; }
         public string Name { get; set; }
     }
 }
