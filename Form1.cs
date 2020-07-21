@@ -16,5 +16,10 @@ namespace ReadingFile_Csharp
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            List<Friends> friendList = FriendsDb.GetFriends();
+        }
     }
 }
